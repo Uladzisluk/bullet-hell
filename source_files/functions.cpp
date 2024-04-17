@@ -123,7 +123,7 @@ void changePossOfShoot(Enemy* enemy, Game* game){
 void loadBmp(Sdl* sdl, Player* Player, Enemy* Enemy, Game game, Level* levels){
     // wczytanie obrazka cs8x8.bmp
     if(sdl->charset!=NULL) SDL_FreeSurface(sdl->charset);
-    sdl->charset = SDL_LoadBMP("cs8x8.bmp");
+    sdl->charset = SDL_LoadBMP("images/cs8x8.bmp");
     if(sdl->charset == NULL) {
         printf("SDL_LoadBMP(cs8x8.bmp) error: %s\n", SDL_GetError());
         exit(0);
@@ -131,7 +131,7 @@ void loadBmp(Sdl* sdl, Player* Player, Enemy* Enemy, Game game, Level* levels){
     SDL_SetColorKey(sdl->charset, true, 0x000000);
 
     if(sdl->player!=NULL) SDL_DestroyTexture(sdl->player);
-    SDL_Surface* player = SDL_LoadBMP("player3.bmp");
+    SDL_Surface* player = SDL_LoadBMP("images/player3.bmp");
     if(player == NULL) {
         printf("SDL_LoadBMP(player.bmp) error: %s\n", SDL_GetError());
         exit(0);
@@ -145,7 +145,7 @@ void loadBmp(Sdl* sdl, Player* Player, Enemy* Enemy, Game game, Level* levels){
 
     if(sdl->enemy!=NULL) SDL_DestroyTexture(sdl->enemy);
     char link[110];
-    snprintf(link, sizeof(link), "enemy%d.bmp", game.level+1);
+    snprintf(link, sizeof(link), "images/enemy%d.bmp", game.level+1);
     SDL_Surface* enemy = SDL_LoadBMP(link);
     if(enemy == NULL) {
         printf("SDL_LoadBMP(enemy%d.bmp) error: %s\n", game.level, SDL_GetError());
@@ -159,7 +159,7 @@ void loadBmp(Sdl* sdl, Player* Player, Enemy* Enemy, Game game, Level* levels){
     }
 
     if(sdl->enemyBullet != NULL) SDL_DestroyTexture(sdl->enemyBullet);
-    SDL_Surface* enemyBullet = SDL_LoadBMP("enemyBullet.bmp");
+    SDL_Surface* enemyBullet = SDL_LoadBMP("images/enemyBullet.bmp");
     if(enemyBullet == NULL) {
         printf("SDL_LoadBMP(enemyBullet.bmp) error: %s\n", SDL_GetError());
         exit(0);
@@ -171,7 +171,7 @@ void loadBmp(Sdl* sdl, Player* Player, Enemy* Enemy, Game game, Level* levels){
     }
 
     if(sdl->playerBullet != NULL) SDL_DestroyTexture(sdl->playerBullet);
-    SDL_Surface* playerBullet = SDL_LoadBMP("playerBullet.bmp");
+    SDL_Surface* playerBullet = SDL_LoadBMP("images/playerBullet.bmp");
     if(playerBullet == NULL) {
         printf("SDL_LoadBMP(playerBullet.bmp) error: %s\n", SDL_GetError());
         exit(0);
@@ -183,7 +183,7 @@ void loadBmp(Sdl* sdl, Player* Player, Enemy* Enemy, Game game, Level* levels){
     }
 
     if(sdl->bg!=NULL) SDL_DestroyTexture(sdl->bg);
-    SDL_Surface* sky = SDL_LoadBMP("sky.bmp");
+    SDL_Surface* sky = SDL_LoadBMP("images/sky.bmp");
     if(sky == NULL) {
         printf("SDL_LoadBMP(sky.bmp) error: %s\n", SDL_GetError());
         exit(0);
