@@ -1,7 +1,12 @@
 # Bullet hell.
-## This is
+## This is a game similar to bullet hell
 ### Description
+A simple game similar to bullet hell. Consult https://en.wikipedia.org/wiki/Bullet_hell for an overview.
+This game have was written in C++ using SDL2 library to provide low level access to audio, keyboard, mouse and graphics.
 
+### Screenshots
+![Screenshot from main menu](/Screenshot1.png)
+![Screenshot from game](/Screenshot2.png)
 
 ### How to Install and Run the Project
 - Clone this repository
@@ -29,6 +34,5 @@
 - Go to system under linker. Edit subsystem. Select Console.
 - Click Apply and OK. Done for properties.
 - From *source_files* folder add all files to Source Files in Visual Studio.
-- From *header_files* folder add all files to Header Files in Visual Studio.
 - Replace *images* folder to working directory. The working directory is where your application thinks it is operating. Typically, your working directory is the directory where your executable is at but some programs like Visual Studio change the working directory to where the vcxproj file is located.
 - Run
