@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 //
 // Created by Uladzislau Lukashevich on 09/01/2022.
 //
