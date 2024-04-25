@@ -1,4 +1,7 @@
 # Bullet hell.
+
+[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 ## This is a game similar to bullet hell
 ### Description
 A simple game similar to bullet hell. Consult https://en.wikipedia.org/wiki/Bullet_hell for an overview.
