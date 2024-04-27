@@ -5,7 +5,7 @@
 ## This is a game similar to bullet hell
 ### Description
 A simple game similar to bullet hell. Consult https://en.wikipedia.org/wiki/Bullet_hell for an overview.
-This game have was written in C++ using SDL2 library to provide low level access to audio, keyboard, mouse and graphics.
+This game was written in C++ using the SDL2 library to provide low-level access to audio, keyboard, mouse and graphics.
 
 ### Screenshots
 ![Screenshot from main menu](/Screenshot1.png)
